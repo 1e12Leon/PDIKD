@@ -26,24 +26,158 @@
 
 ### Experimental Results
 
-| Dataset   | Method                   | Publication  | mAP   | AP_{0.5} | AP_{0.75} | AP_S  | AP_M  | AP_L  |  
-|-----------|--------------------------|--------------|-------|----------|-----------|-------|-------|-------|  
-|           | YOLOv7-L (T)             | CVPR2023     | 6.94  | 30.26    | **16.89** | 8.17  | **26.90** | **42.41** |  
-|           | YOLOv7-Tiny (S)          | CVPR2023     | 11.62 | 21.95    | 11.25     | 4.71  | 18.39 | 32.60 |  
-| VisDrone  | FitNets                  | ICLR2015     | 12.87 | 24.71    | 12.34     | 5.21  | 20.62 | 34.77 |  
-|           | BCKD                     | ICCV2023     | 16.08 | 30.71    | 15.81     | 8.81 | 24.90 | 26.60 |  
-|           | CrossKD                  | CVPR2024     | 14.96 | 29.22    | 14.11     | 8.79  | 23.77 | 24.54 |  
-|           | *Ours*                   | -            | **17.07** | **31.92** | 16.77  | **9.56** | 25.90 | 38.98 |  
-|-----------|--------------------------|--------------|-------|----------|-----------|-------|-------|-------|  
-|           | YOLOv7-L (T)             | CVPR2023     | 33.66 | 64.01    | 30.36     | 18.44 | 42.19 | **40.97** |  
-|           | YOLOv7-Tiny (S)          | CVPR2023     | 30.21 | 58.41    | 27.78     | 15.66 | 37.88 | 36.68 |  
-| SynDrone  | FitNets                  | ICLR2015     | 32.12 | 61.73    | 29.32     | 16.82 | 40.21 | 39.38 |  
-|           | BCKD                     | ICCV2023     | 32.66 | 63.12    | 29.95     | 21.52 | 40.52 | 31.93 |  
-|           | CrossKD                  | CVPR2024     | 31.79 | 61.85    | 28.46     | 17.84 | 39.53 | 30.88 |  
-|           | *Ours*                   | -            | **35.12** | **65.09** | **33.30** | **22.27** | **43.08** | 36.51 |
+<table>  
+    <thead>  
+        <tr>  
+            <th>Dataset</th>  
+            <th>Method</th>  
+            <th>Publication</th>  
+            <th>mAP</th>  
+            <th>AP_{0.5}</th>  
+            <th>AP_{0.75}</th>  
+            <th>AP_S</th>  
+            <th>AP_M</th>  
+            <th>AP_L</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        <tr>  
+            <td></td>  
+            <td>YOLOv7-L (T)</td>  
+            <td>CVPR2023</td>  
+            <td>6.94</td>  
+            <td>30.26</td>  
+            <td><strong>16.89</strong></td>  
+            <td>8.17</td>  
+            <td><strong>26.90</strong></td>  
+            <td><strong>42.41</strong></td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td>YOLOv7-Tiny (S)</td>  
+            <td>CVPR2023</td>  
+            <td>11.62</td>  
+            <td>21.95</td>  
+            <td>11.25</td>  
+            <td>4.71</td>  
+            <td>18.39</td>  
+            <td>32.60</td>  
+        </tr>  
+        <tr>  
+            <td>VisDrone</td>  
+            <td>FitNets</td>  
+            <td>ICLR2015</td>  
+            <td>12.87</td>  
+            <td>24.71</td>  
+            <td>12.34</td>  
+            <td>5.21</td>  
+            <td>20.62</td>  
+            <td>34.77</td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td>BCKD</td>  
+            <td>ICCV2023</td>  
+            <td>16.08</td>  
+            <td>30.71</td>  
+            <td>15.81</td>  
+            <td>8.81</td>  
+            <td>24.90</td>  
+            <td>26.60</td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td>CrossKD</td>  
+            <td>CVPR2024</td>  
+            <td>14.96</td>  
+            <td>29.22</td>  
+            <td>14.11</td>  
+            <td>8.79</td>  
+            <td>23.77</td>  
+            <td>24.54</td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td><em>Ours</em></td>  
+            <td>-</td>  
+            <td><strong>17.07</strong></td>  
+            <td><strong>31.92</strong></td>  
+            <td>16.77</td>  
+            <td><strong>9.56</strong></td>  
+            <td>25.90</td>  
+            <td>38.98</td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td>YOLOv7-L (T)</td>  
+            <td>CVPR2023</td>  
+            <td>33.66</td>  
+            <td>64.01</td>  
+            <td>30.36</td>  
+            <td>18.44</td>  
+            <td>42.19</td>  
+            <td><strong>40.97</strong></td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td>YOLOv7-Tiny (S)</td>  
+            <td>CVPR2023</td>  
+            <td>30.21</td>  
+            <td>58.41</td>  
+            <td>27.78</td>  
+            <td>15.66</td>  
+            <td>37.88</td>  
+            <td>36.68</td>  
+        </tr>  
+        <tr>  
+            <td>SynDrone</td>  
+            <td>FitNets</td>  
+            <td>ICLR2015</td>  
+            <td>32.12</td>  
+            <td>61.73</td>  
+            <td>29.32</td>  
+            <td>16.82</td>  
+            <td>40.21</td>  
+            <td>39.38</td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td>BCKD</td>  
+            <td>ICCV2023</td>  
+            <td>32.66</td>  
+            <td>63.12</td>  
+            <td>29.95</td>  
+            <td>21.52</td>  
+            <td>40.52</td>  
+            <td>31.93</td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td>CrossKD</td>  
+            <td>CVPR2024</td>  
+            <td>31.79</td>  
+            <td>61.85</td>  
+            <td>28.46</td>  
+            <td>17.84</td>  
+            <td>39.53</td>  
+            <td>30.88</td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td><em>Ours</em></td>  
+            <td>-</td>  
+            <td><strong>35.12</strong></td>  
+            <td><strong>65.09</strong></td>  
+            <td><strong>33.30</strong></td>  
+            <td><strong>22.27</strong></td>  
+            <td><strong>43.08</strong></td>  
+            <td>36.51</td>  
+        </tr>  
+    </tbody>  
+</table>
 
 ### Citation
 
 
 ### Contact
-Please Contact [yaoliang@hhu.edu.cn](yaoliang@hhu.edu.cn)
+Please Contact yaoliang@hhu.edu.cn
