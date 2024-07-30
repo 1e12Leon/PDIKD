@@ -33,8 +33,8 @@
             <th>Method</th>  
             <th>Publication</th>  
             <th>mAP</th>  
-            <th>AP_{0.5}</th>  
-            <th>AP_{0.75}</th>  
+            <th>AP_0.5</th>  
+            <th>AP_0.75</th>  
             <th>AP_S</th>  
             <th>AP_M</th>  
             <th>AP_L</th>  
@@ -106,7 +106,8 @@
             <td><strong>9.56</strong></td>  
             <td>25.90</td>  
             <td>38.98</td>  
-        </tr>  
+        </tr>
+<hr>
         <tr>  
             <td></td>  
             <td>YOLOv7-L (T)</td>  
