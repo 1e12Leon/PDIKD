@@ -178,7 +178,14 @@
 </table>
 
 ### Citation
-
+```bibtex
+@article{yao2024domain,
+  title={Domain-invariant Progressive Knowledge Distillation for UAV-based Object Detection},
+  author={Yao, Liang and Liu, Fan and Zhang, Chuanyi and Ou, Zhiquan and Wu, Ting},
+  journal={arXiv preprint arXiv:2408.11407},
+  year={2024}
+}
+```
 
 ### Contact
 Please Contact yaoliang@hhu.edu.cn
