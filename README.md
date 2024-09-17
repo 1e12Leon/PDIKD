@@ -71,9 +71,10 @@ VOCdevkit
 
 ## Training
 
-    ```bash
-    python distill.py
-    ```
+```bash
+python distill.py
+```
+    
 ## Experimental Results
 
 <table>  
