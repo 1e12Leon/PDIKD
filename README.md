@@ -20,11 +20,61 @@
 
 ![Fig2_4](https://github.com/user-attachments/assets/26aceea6-d277-4468-ba3d-39f6e268cc37)
 
-### News
+# News
 
 - **2024/07/29**: We propose a Progressive and Domain-invariant Knowledge Distillation method for UAV-OD. Codes and models will be open-sourced at this repository.
 
-### Experimental Results
+# Getting Started
+
+## Install
+
+- Clone this repo:
+
+    ```bash
+    git clone https://github.com/1e12Leon/PDIKD.git
+    ```
+- Create a conda virtual environment and activate it:
+
+    ```bash
+    conda create -n PDIKD python=3.6 -y
+    conda activate PDIKD
+    ```
+
+- Install `CUDA Toolkit 11.3` ([link](https://developer.nvidia.com/cuda-11.3.0-download-archive)) and `cudnn==8.2.1` [(link)](https://developer.nvidia.com/rdp/cudnn-archive), then install `PyTorch==1.10.1`:
+
+    ```bash
+    conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch -y
+    # if you prefer other cuda versions, please choose suitable pytorch versions
+    # see: https://pytorch.org/get-started/locally/
+    ```
+    
+## Data Preparation
+This code repository uses VOC format object detection data.
+```
+VOCdevkit
+    ├───VOC2007
+    │   ├───ImageSets
+    │   |     ├───Main
+    │   |            test.txt
+    │   |            train.txt
+    │   |            trainval.txt
+    │   |            val.txt
+    │   ├───JPEGImages
+    │   │       xxx1.jpg
+    │   │       xxx2.jpg
+    │   │       ...
+    │   └───Annotations
+                xxx1.xml
+                xxx2.xml
+                ...
+```
+
+## Training
+
+    ```bash
+    python distill.py
+    ```
+## Experimental Results
 
 <table>  
     <thead>  
@@ -177,7 +227,7 @@
     </tbody>  
 </table>
 
-### Citation
+# Citation
 ```bibtex
 @article{yao2024domain,
   title={Domain-invariant Progressive Knowledge Distillation for UAV-based Object Detection},
@@ -187,5 +237,5 @@
 }
 ```
 
-### Contact
+# Contact
 Please Contact yaoliang@hhu.edu.cn
