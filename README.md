@@ -13,8 +13,6 @@
 <img src="assets/hhu_logo.png" alt="Logo" width="15">, &nbsp; &nbsp; 
 [Ting Wu (吴婷)](https://multimodality.group/author/%E5%90%B4%E5%A9%B7/) 
 <img src="assets/hhu_logo.png" alt="Logo" width="15">, &nbsp; &nbsp; 
-[Jun Zhou (周峻)](https://experts.griffith.edu.au/7205-jun-zhou) 
-<img src="assets/griffith_logo.png" alt="Logo" width="15">
 
 </div>
 
