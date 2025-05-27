@@ -1,6 +1,6 @@
 <div align="center">
 
-## Progressive and Domain-invariant Knowledge Distillation for UAV-based Object Detection
+## [Progressive and Domain-invariant Knowledge Distillation for UAV-based Object Detection](https://ieeexplore.ieee.org/document/10745610)
 
 [Liang Yao (姚亮)](https://multimodality.group/author/%E5%A7%9A%E4%BA%AE/) 
 <img src="assets/hhu_logo.png" alt="Logo" width="15">, &nbsp; &nbsp; 
@@ -20,6 +20,7 @@
 
 # News
 
+- **2024/10/29**: Our paper has been accepted by IEEE Geoscience and Remote Sensing Letters (IEEE GRSL).
 - **2024/07/29**: We propose a Progressive and Domain-invariant Knowledge Distillation method for UAV-OD. Codes and models will be open-sourced at this repository.
 
 # Getting Started
