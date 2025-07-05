@@ -1,6 +1,6 @@
 <div align="center">
 
-## [Progressive and Domain-invariant Knowledge Distillation for UAV-based Object Detection](https://ieeexplore.ieee.org/document/10745610)
+## [Domain-invariant Progressive Knowledge Distillation for UAV-based Object Detection](https://ieeexplore.ieee.org/document/10745610)
 
 [Liang Yao (姚亮)](https://multimodality.group/author/%E5%A7%9A%E4%BA%AE/) 
 <img src="assets/hhu_logo.png" alt="Logo" width="15">, &nbsp; &nbsp; 
